@@ -10,7 +10,7 @@ export class ArrayComponent implements ArrayService {
             if(myArray[i]%5===0 || myArray[i]%10 ===0){
                 temp[j] = myArray[i];
                 j++;
-            }              
+            }
         }
         return temp
     }
@@ -21,7 +21,7 @@ export class ArrayComponent implements ArrayService {
             if(typeof(myArray[i]) === "string"){
                 str[j] = myArray[i];
                 j++;
-            }              
+            }
         }
         return str;
     }
@@ -38,10 +38,10 @@ export class ArrayComponent implements ArrayService {
                 else{
                     primeArray[k] = y;
                     k++; }
+                }
             }
-        }
         return primeArray;
-    }
+        }
 
     public arraySort(myArray:any):Array<string>{
         myArray.sort();
@@ -58,7 +58,7 @@ export class ArrayComponent implements ArrayService {
     }
 }
 
-let myArray: number[] = [34, 45, 60, 23, 13, 25, 70];
+let myArray: number[] = [5,10,13,15,20,23,25,40,43,60,70];
 let array = new ArrayComponent();
 
 console.log(array.arrayMultiply(myArray));

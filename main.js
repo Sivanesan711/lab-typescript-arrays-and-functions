@@ -55,7 +55,7 @@ var ArrayComponent = /** @class */ (function () {
     return ArrayComponent;
 }());
 exports.ArrayComponent = ArrayComponent;
-var myArray = [34, 45, 60, 23, 13, 25, 70];
+var myArray = [5, 10, 13, 15, 20, 23, 25, 40, 43, 60, 70];
 var array = new ArrayComponent();
 console.log(array.arrayMultiply(myArray));
 console.log(array.arraySeparate(myArray));
